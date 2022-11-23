@@ -1,5 +1,3 @@
-# Kokunime
-
 ## Setup project
 
 ```bash
