@@ -55,7 +55,7 @@ const Navbar = () => {
             <h1 className="text-center bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent font-bold text-3xl 2xl:text-4xl hidden md:block">
               <Link href="/">
                 <a className="selection:bg-yellow-700 selection:text-yellow-400">
-                  Kokunime
+                  ROnime
                 </a>
               </Link>
             </h1>
