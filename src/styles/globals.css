@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  html {
+    @apply scroll-smooth font-medium;
+    font-family: "Nunito", Arial, Helvetica, sans-serif !important;
+    color-scheme: dark;
+  }
+
+  body {
+    @apply !overflow-x-hidden bg-gradient-to-tl from-slate-900 via-slate-800 to-slate-900;
+  }
+}
+
+/* When Window On Scroll */
+.navbar-fixed {
+  @apply opacity-100 bg-opacity-50 backdrop-blur-xl border-b-slate-600;
+}
+/* When Window On Scroll */
+
+.hamburger-line {
+  @apply w-8 h-[3px] rounded bg-white block my-[7px] transition duration-300 -z-[9999];
+}
+
+.navbar-nav {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.active {
+  @apply border-b-slate-200;
+}
+
+#toggle {
+  transform: translateX(2px) translateY(3px);
+}
+
+/* When Hamburger Menu On Click */
+nav ul.slide {
+  transform: translateX(-1rem);
+  opacity: 1;
+}
+
+.hamburger-active ~ span:nth-child(2) {
+  @apply -rotate-[40deg];
+}
+
+.hamburger-active ~ span:nth-child(3) {
+  @apply scale-0 opacity-0;
+}
+
+.hamburger-active ~ span:nth-child(4) {
+  @apply rotate-[40deg];
+}
+/* When Hamburger Menu On Click */
+
+/* Loading Animation */
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loading Animation */
