@@ -14,3 +14,9 @@ yarn install # or npm install # or pnpm install
 yarn dev # or npm run dev # or pnpm dev
 ```
 
+# Setup project
+
+# Setup project
+
+ Ryuzein aji
+
